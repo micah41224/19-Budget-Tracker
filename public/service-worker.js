@@ -18,6 +18,7 @@ self.addEventListener("install", function(event) {
       return cache.addAll(toCache);
     })
   );
+  self.skipWaiting();
 });
 
 self.addEventListener("fetch", function(event) {
